@@ -7,6 +7,22 @@
 import Thing from '../api/thing/thing.model';
 import User from '../api/user/user.model';
 
+//
+import Appointment from '../api/appointment/appointment.model';
+
+Appointment.find({}).remove(function() {
+      Appointment.create(  {
+        name : 'Ian wright',
+        address:   'Lacka road8',
+        upvotes: 0
+      },     {
+        name : 'Jackie Legs',
+        address:   'Ballyduff East',
+        upvotes: 0
+      });
+  });
+//
+
 //--
 import Post from '../api/post/post.model';
 
